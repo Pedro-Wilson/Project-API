@@ -39,10 +39,10 @@ Pré-requisitos
 Navegue até o diretório raiz do projeto (HelloAPI) e utilize o Maven para compilar o código e gerar o arquivo WAR:
 
 
-'''
-Shell :
-mvn clean package
-'''
+
+Shell : <br>
+-- mvn clean package
+
 >  Saída Esperada: O Maven gerará o arquivo de implantação: target/HelloAPI-1.0-SNAPSHOT.war
 
 2. Implantação (Deploy) no WildFly
@@ -52,10 +52,10 @@ Com o servidor WildFly em execução, copie o arquivo gerado para a pasta monito
     Inicie o WildFly (exemplo no Linux): ~/servers/wildfly-30.0.1.Final/bin/standalone.sh
 
     Copie o WAR para a pasta de deployments (Ajuste o caminho conforme sua instalação):
-'''
-Shell :
- cp target/HelloAPI-1.0-SNAPSHOT.war /caminho/do/seu/wildfly/standalone/deployments/
-'''
+
+Shell : <br>
+-- cp target/HelloAPI-1.0-SNAPSHOT.war /caminho/do/seu/wildfly/standalone/deployments/
+
 Confirmação de Deploy: O log do WildFly deve exibir uma mensagem de sucesso, indicando que a aplicação foi registrada:
 
 >  WFLYSRV0010: Deployed "HelloAPI-1.0-SNAPSHOT.war" (runtime-name : "HelloAPI-1.0-SNAPSHOT.war")
@@ -71,10 +71,10 @@ http://localhost:8080/HelloAPI-1.0-SNAPSHOT/api/hello/{nome}
 Validação com cURL
 
 Utilize o curl no terminal para testar o serviço, substituindo {nome} pelo valor desejado:
-'''
-Shel :
-curl http://localhost:8080/HelloAPI-1.0-SNAPSHOT/api/hello/Pedro
-'''
+
+Shel : <br>
+-- curl http://localhost:8080/HelloAPI-1.0-SNAPSHOT/api/hello/Pedro
+
 Resposta Esperada: O retorno deve ser a mensagem processada pelo EJB:
 
 >  Olá, Pedro! Bem-vindo à API EJB.
