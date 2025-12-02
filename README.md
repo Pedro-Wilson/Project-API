@@ -16,21 +16,7 @@ A API implementa um serviço de saudação, utilizando JAX-RS para definir o end
 
     Servidor de Aplicações: WildFly (compatível com Jakarta EE 10)
 
-📂 Estrutura do Projeto
 
-A estrutura de diretórios do projeto (padrão Maven Web Archive - WAR) é a seguinte:
-
-HelloAPI/
-├── pom.xml
-└── src/
-    └── main/
-        ├── java/
-        │   └── com/exemplo/
-        │       ├── HelloResource.java     # Recurso JAX-RS (Endpoint)
-        │       ├── HelloService.java      # EJB Stateless (Lógica de Negócio)
-        │       └── RestApplication.java   # Configuração base do JAX-RS
-        └── webapp/
-            └── WEB-INF/
 
 Detalhes das Classes
 Arquivo	Função	Anotações Principais
